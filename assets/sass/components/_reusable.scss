@@ -1,0 +1,17 @@
+/*==================== REUSABLE CSS CLASSES ====================*/
+.section {
+  padding: 2rem 0 4rem;
+
+  .section__title {
+    font-size: var(--h1-font-size);
+    color: var(--title-color);
+    text-align: center;
+  }
+
+  .section__subtitle {
+    display: block;
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-3);
+    text-align: center;
+  }
+}

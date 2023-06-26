@@ -1,0 +1,120 @@
+/*==================== SKILLS ====================*/
+
+.skills__container {
+  row-gap: 0;
+
+  .skills__close .skills__list {
+    height: 0;
+    overflow: hidden;
+  }
+
+  .skills__open .skills__list {
+    height: max-content;
+    margin-bottom: var(--mb-2-5);
+  }
+
+  .skills__open .skills__arrow {
+    transform: rotate(-180deg);
+  }
+
+  .skills__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--mb-2-5);
+    cursor: pointer;
+
+    .skills__icon,
+    .skills__arrow {
+      font-size: 2rem;
+      color: var(--first-color);
+    }
+
+    .skills__arrow {
+      margin-left: auto;
+      transition: 0.4s;
+    }
+
+    .skills__icon {
+      margin-right: var(--mb-0-75);
+    }
+
+    .skills__title {
+      font-size: var(--h3-font-size);
+    }
+
+    .skills__subtitle {
+      font-size: var(--small-font-size);
+      color: var(--text-color-light);
+    }
+  }
+
+  .skills__list {
+    row-gap: 1.5rem;
+    padding-left: 2.7rem;
+    transition: 0.5s;
+
+    .skills__data {
+      .skills__titles {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: var(--mb-0-5);
+
+        .skills__name {
+          font-size: var(--normal-font-size);
+          font-weight: var(--font-medium);
+        }
+      }
+
+      .skills__bar {
+        background-color: var(--first-color-lighter);
+
+        &,
+        .skills__percentage {
+          height: 5px;
+          border-radius: 0.25rem;
+        }
+
+        .skills__percentage {
+          display: block;
+          background-color: var(--first-color);
+        }
+
+        .skills__html,
+        .skills__ruby,
+        .skills__figma,
+        .skills__mvc,
+        .skills__git {
+          width: 90%;
+        }
+
+        .skills__css,
+        .skills__rails {
+          width: 80%;
+        }
+
+        .skills__js,
+        .skills__photoshop,
+        .skills__psql,
+        .skills__sqlite {
+          width: 70%;
+        }
+
+        .skills__stimulus,
+        .skills__django,
+        .skills__sketch {
+          width: 50%;
+        }
+
+        .skills__python,
+        .skills__illustrator,
+        .skills__api {
+          width: 60%;
+        }
+
+        .skills__php {
+          width: 20%;
+        }
+      }
+    }
+  }
+}

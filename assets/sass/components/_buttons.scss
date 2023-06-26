@@ -1,0 +1,66 @@
+/*========== Button Dark/Light ==========*/
+.nav__btns {
+  display: flex;
+  align-items: center;
+}
+
+.change-theme {
+  font-size: 1.25rem;
+  color: var(--title-color);
+  cursor: pointer;
+  margin-right: var(--mb-1-5);
+
+  &:hover {
+    color: var(--first-color-alt);
+  }
+}
+
+/*==================== BUTTONS ====================*/
+.button {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: var(--font-medium);
+  transition: 0.3s;
+
+  &:hover {
+    background-color: var(--first-color-alt);
+  }
+}
+
+.button__icon {
+  font-size: 1.25rem;
+  margin-left: var(--mb-0-5);
+  transition: 0.5s;
+}
+
+.button--white {
+  background-color: #fff;
+  color: var(--first-color);
+
+  &:hover {
+    background-color: #fff;
+  }
+}
+
+.button--flex {
+  display: inline-flex;
+  align-items: center;
+}
+
+.button--small {
+  padding: 0.75rem 1rem;
+}
+
+.button--link {
+  padding: 0;
+  background-color: transparent;
+  color: var(--first-color);
+
+  &:hover {
+    background-color: transparent;
+    color: var(--first-color-alt);
+  }
+}
