@@ -30,9 +30,21 @@
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="assets/css/style.css">
 
+        <style>
+            #particles-js {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+            }
+        </style>
+
         <title>CodeCraft Solutions</title>
     </head>
     <body class="dark-theme">
+        <div id="particles-js"></div>
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <nav class="nav container">
@@ -1034,5 +1046,14 @@
 
         <!--==================== MAIN JS ====================-->
         <script src="assets/js/main.js"></script>
+
+        <!--==================== ParticlesJs ====================-->
+        <script src="particles.js"></script>
+
+        <script>
+            particlesJS.load('particles-js', 'particles.json', function() {
+              console.log('Particles.js loaded');
+            });
+        </script>
     </body>
 </html>
