@@ -193,7 +193,9 @@ img {
   font-size: var(--small-font-size);
   margin-bottom: var(--mb-3);
   text-align: center;
-} /*==================== LAYOUT ====================*/
+}
+
+/*==================== LAYOUT ====================*/
 /*==================== LAYOUT ====================*/
 .container {
   max-width: 768px;
@@ -448,9 +450,17 @@ img {
 .skills__container .skills__list .skills__data .skills__titles .skills__name {
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
+  background-color: var(--first-color);
+  width: 100%;
+  padding: var(--mb-0-25) var(--mb-0-5);
+  border-radius: 0.25rem;
+}
+.skills__container .skills__list .skills__data .skills__titles .skills__number {
+  display: none;
 }
 .skills__container .skills__list .skills__data .skills__bar {
   background-color: var(--first-color-lighter);
+  display: none;
 }
 .skills__container .skills__list .skills__data .skills__bar,
 .skills__container .skills__list .skills__data .skills__bar .skills__percentage {
@@ -816,6 +826,13 @@ section.project .project__bg .project__container .project__img {
 .footer .footer__bg .footer__link,
 .footer .footer__bg .footer__social {
   color: #fff;
+}
+.footer .footer__bg .footer__link {
+  white-space: nowrap;
+  transition: 0.3s;
+}
+.footer .footer__bg .footer__link:hover {
+  color: var(--first-color-lighter);
 }
 .footer .footer__container {
   row-gap: 3.5rem;

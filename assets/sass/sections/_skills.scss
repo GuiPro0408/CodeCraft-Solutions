@@ -62,11 +62,20 @@
         .skills__name {
           font-size: var(--normal-font-size);
           font-weight: var(--font-medium);
+          background-color: var(--first-color);
+          width: 100%;
+          padding: var(--mb-0-25) var(--mb-0-5);
+          border-radius: 0.25rem;
+        }
+
+        .skills__number {
+          display: none;
         }
       }
 
       .skills__bar {
         background-color: var(--first-color-lighter);
+        display: none;
 
         &,
         .skills__percentage {

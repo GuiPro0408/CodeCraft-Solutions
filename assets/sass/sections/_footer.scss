@@ -19,6 +19,15 @@
     .footer__social {
       color: #fff;
     }
+
+    .footer__link {
+      white-space: nowrap;
+      transition: 0.3s;
+
+      &:hover {
+        color: var(--first-color-lighter);
+      }
+    }
   }
 
   .footer__container {
